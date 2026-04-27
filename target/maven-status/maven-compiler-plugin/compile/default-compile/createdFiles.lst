@@ -1,0 +1,14 @@
+com\rapidresponse\user\AuthController.class
+com\rapidresponse\user\AppUser.class
+com\rapidresponse\user\AuthResponse.class
+com\rapidresponse\RapidResponseApplication.class
+com\rapidresponse\crisis\CrisisReport.class
+com\rapidresponse\crisis\CrisisReportRepository.class
+com\rapidresponse\crisis\CrisisReportRequest.class
+com\rapidresponse\user\UserRepository.class
+com\rapidresponse\user\RegisterRequest.class
+com\rapidresponse\user\UserResponse.class
+com\rapidresponse\user\LoginRequest.class
+com\rapidresponse\crisis\CrisisController.class
+com\rapidresponse\crisis\CrisisReportResponse.class
+com\rapidresponse\chat\ChatController.class
