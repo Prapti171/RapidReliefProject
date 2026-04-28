@@ -29,7 +29,7 @@ public class CrisisController {
 
     @PostMapping("/report")
     public ResponseEntity<?> report(@RequestBody CrisisReportRequest request) {
-        Long userId = request.userId();
+        Long userId = request.getUserId();
         if (userId == null) {
             return ResponseEntity.badRequest().body(Map.of("message", "User id is required."));
         }
@@ -38,17 +38,17 @@ public class CrisisController {
                 .<ResponseEntity<?>>map(user -> {
                     CrisisReport report = new CrisisReport();
                     report.setUser(user);
-                    report.setCrisisType(request.crisisType() == null ? "Medical emergency" : request.crisisType());
-                    report.setDescription(request.description() == null ? "" : request.description());
-                    report.setSourceLat(request.sourceLat());
-                    report.setSourceLng(request.sourceLng());
-                    report.setDestinationLat(request.destinationLat());
-                    report.setDestinationLng(request.destinationLng());
+                    report.setCrisisType(request.getCrisisType() == null ? "Medical emergency" : request.getCrisisType());
+                    report.setDescription(request.getDescription() == null ? "" : request.getDescription());
+                    report.setSourceLat(request.getSourceLat());
+                    report.setSourceLng(request.getSourceLng());
+                    report.setDestinationLat(request.getDestinationLat());
+                    report.setDestinationLng(request.getDestinationLng());
                     report.setDistanceKm(distanceKm(
-                            request.sourceLat(),
-                            request.sourceLng(),
-                            request.destinationLat(),
-                            request.destinationLng()));
+                            request.getSourceLat(),
+                            request.getSourceLng(),
+                            request.getDestinationLat(),
+                            request.getDestinationLng()));
                     report.setCreatedAt(LocalDateTime.now());
                     return ResponseEntity.ok(CrisisReportResponse.from(reports.save(report)));
                 })

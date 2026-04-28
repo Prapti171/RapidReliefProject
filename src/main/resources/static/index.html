@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,46 +16,46 @@
             <nav class="topbar">
                 <div class="rr-brand hero-rr-brand"><span>RR</span><strong>Rapid<br>Response</strong></div>
                 <div class="nav-links">
-                    <a href="#loginCard">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#dashboardPage">Live Map</a>
-                    <button class="donate-btn" type="button">Emergency Help</button>
+                    <a href="#loginCard" data-i18n="navHome">Home</a>
+                    <a href="#about" data-i18n="navAbout">About Us</a>
+                    <a href="#dashboardPage" data-i18n="navLiveMap">Live Map</a>
+                    <button class="donate-btn" type="button" data-i18n="heroHelp">Emergency Help</button>
                 </div>
             </nav>
             <div class="hero-content">
-                <h1>Medical Crisis Relief</h1>
-                <p>Register, log in, report emergencies, track hospitals, and get quick first-aid guidance.</p>
-                <a class="outline-cta" href="#loginCard">Start Now</a>
+                <h1 data-i18n="heroTitle">Medical Crisis Relief</h1>
+                <p data-i18n="heroSubtitle">Register, log in, report emergencies, track hospitals, and get quick first-aid guidance.</p>
+                <a class="outline-cta" href="#loginCard" data-i18n="heroCta">Start Now</a>
             </div>
         </section>
 
         <section class="auth-grid" id="loginCard">
             <form id="registerForm" class="panel">
-                <h2>Create Account</h2>
-                <label>Full name<input name="fullName" required placeholder="Aarav Sharma"></label>
-                <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
-                <label>Phone<input name="phone" required placeholder="+91 98765 43210"></label>
+                <h2 data-i18n="registerTitle">Create Account</h2>
+                <label data-i18n-label="registerFullNameLabel">Full name<input name="fullName" required placeholder="Aarav Sharma" data-i18n-placeholder="registerFullNamePlaceholder"></label>
+                <label data-i18n-label="registerEmailLabel">Email<input name="email" type="email" required placeholder="you@example.com" data-i18n-placeholder="registerEmailPlaceholder"></label>
+                <label data-i18n-label="registerPhoneLabel">Phone<input name="phone" required placeholder="+91 98765 43210" data-i18n-placeholder="registerPhonePlaceholder"></label>
                 <div class="two-cols">
-                    <label>Blood group<input name="bloodGroup" required placeholder="O+"></label>
-                    <label>Emergency contact<input name="emergencyContact" required placeholder="+91 90000 00000"></label>
+                    <label data-i18n-label="registerBloodLabel">Blood group<input name="bloodGroup" required placeholder="O+" data-i18n-placeholder="registerBloodPlaceholder"></label>
+                    <label data-i18n-label="registerEmergencyLabel">Emergency contact<input name="emergencyContact" required placeholder="+91 90000 00000" data-i18n-placeholder="registerEmergencyPlaceholder"></label>
                 </div>
-                <label>Password<input name="password" type="password" required minlength="6" placeholder="Minimum 6 characters"></label>
-                <button type="submit">Register</button>
+                <label data-i18n-label="registerPasswordLabel">Password<input name="password" type="password" required minlength="6" placeholder="Minimum 6 characters" data-i18n-placeholder="registerPasswordPlaceholder"></label>
+                <button type="submit" data-i18n="registerButton">Register</button>
                 <p id="registerMsg" class="message"></p>
             </form>
 
             <form id="loginForm" class="panel">
-                <h2>Login</h2>
-                <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
-                <label>Password<input name="password" type="password" required placeholder="Your password"></label>
-                <button type="submit">Login to Dashboard</button>
+                <h2 data-i18n="loginTitle">Login</h2>
+                <label data-i18n-label="loginEmailLabel">Email<input name="email" type="email" required placeholder="you@example.com" data-i18n-placeholder="loginEmailPlaceholder"></label>
+                <label data-i18n-label="loginPasswordLabel">Password<input name="password" type="password" required placeholder="Your password" data-i18n-placeholder="loginPasswordPlaceholder"></label>
+                <button type="submit" data-i18n="loginButton">Login to Dashboard</button>
                 <p id="loginMsg" class="message"></p>
             </form>
         </section>
 
         <section class="about-band" id="about">
-            <h2>Built for medical and health crises</h2>
-            <p>Store responder-ready patient data, locate nearby care, record crisis reports, and guide users while help is on the way.</p>
+            <h2 data-i18n="aboutTitle">Built for medical and health crises</h2>
+            <p data-i18n="aboutText">Store responder-ready patient data, locate nearby care, record crisis reports, and guide users while help is on the way.</p>
         </section>
     </main>
 
@@ -67,19 +67,19 @@
             </div>
 
             <nav class="side-nav">
-                <p>Main</p>
-                <a class="active" href="#dashboardPage">Dashboard</a>
-                <a href="#mapCard">Live Map</a>
-                <button id="voiceBtn" type="button">Voice SOS</button>
-                <p>Crisis</p>
-                <a href="#alertsCard">Active Alerts</a>
-                <a href="#crisisForm">Report Crisis</a>
-                <p>Medical</p>
-                <a href="#mapCard">Hospitals</a>
-                <a href="#mapCard">Blood Banks</a>
-                <a href="#mapCard">Pharmacies</a>
-                <p>AI</p>
-                <a href="#aiCard">AI Assistant <small>Live</small></a>
+                <p data-i18n="sideMain">Main</p>
+                <a class="active" href="#dashboardPage" data-i18n="sideDashboard">Dashboard</a>
+                <a href="#mapCard" data-i18n="sideLiveMap">Live Map</a>
+                <button id="voiceBtn" type="button" data-i18n="sideVoice">Voice SOS</button>
+                <p data-i18n="sideCrisis">Crisis</p>
+                <a href="#alertsCard" data-i18n="sideAlerts">Active Alerts</a>
+                <a href="#crisisForm" data-i18n="sideReport">Report Crisis</a>
+                <p data-i18n="sideMedical">Medical</p>
+                <a href="#mapCard" data-i18n="sideHospitals">Hospitals</a>
+                <a href="#mapCard" data-i18n="sideBloodBanks">Blood Banks</a>
+                <a href="#mapCard" data-i18n="sidePharmacies">Pharmacies</a>
+                <p data-i18n="sideAi">AI</p>
+                <a href="#aiCard"><span data-i18n="sideAssistant">AI Assistant</span> <small data-i18n="liveBadge">Live</small></a>
             </nav>
 
             <div class="profile-box">
@@ -89,126 +89,162 @@
                     <p id="userMeta">Member</p>
                 </div>
             </div>
-            <button id="logoutBtn" class="logout-action" type="button">Logout</button>
+            <button id="logoutBtn" class="logout-action" type="button" data-i18n="logoutButton">Logout</button>
         </aside>
 
         <section class="crisis-workspace">
             <header class="crisis-topbar">
                 <div class="title-row">
-                    <h1>Medical Crisis Dashboard</h1>
+                    <h1 data-i18n="dashboardTitle">Medical Crisis Dashboard</h1>
                 </div>
                 <div class="top-actions">
-                    <a href="#aiCard">AI Chat</a>
-                    <button id="locateBtn" type="button">SOS Location</button>
-                    <a class="report-link" href="#crisisForm">Report</a>
+                    <a href="#aiCard" data-i18n="topAiChat">AI Chat</a>
+                    <button id="locateBtn" type="button" data-i18n="topLocation">SOS Location</button>
+                    <a class="report-link" href="#crisisForm" data-i18n="topReport">Report</a>
                 </div>
             </header>
 
             <section id="alertsCard" class="alerts-card">
                 <div class="card-title">
-                    <h2>Live Crisis Alerts</h2>
-                    <button id="refreshReportsBtn" type="button">Refresh</button>
+                    <h2 data-i18n="alertsTitle">Live Crisis Alerts</h2>
+                    <button id="refreshReportsBtn" type="button" data-i18n="refreshButton">Refresh</button>
                 </div>
                 <ul id="reportList" class="report-list dark-list"></ul>
             </section>
 
             <section class="dashboard-grid">
                 <form id="crisisForm" class="crisis-panel report-panel">
-                    <h2>Report Medical Crisis</h2>
+                    <h2 data-i18n="reportTitle">Report Medical Crisis</h2>
                     <div class="form-grid">
-                        <label>Title
-                            <input name="title" id="title" placeholder="Brief emergency title">
+                        <label data-i18n-label="fieldTitle">Title
+                            <input name="title" id="title" placeholder="Brief emergency title" data-i18n-placeholder="fieldTitlePlaceholder">
                         </label>
-                        <label>Type
+                        <label data-i18n-label="fieldType">Type
                             <select name="crisisType">
-                                <option>Road accident</option>
-                                <option>Medical Emergency</option>
-                                <option>Heart attack or breathing issue</option>
-                                <option>Severe bleeding</option>
-                                <option>Burns</option>
-                                <option>Stroke symptoms</option>
-                                <option>Unconscious person</option>
+                                <option data-i18n="typeRoadAccident">Road accident</option>
+                                <option data-i18n="typeMedicalEmergency">Medical Emergency</option>
+                                <option data-i18n="typeHeartAttack">Heart attack or breathing issue</option>
+                                <option data-i18n="typeBleeding">Severe bleeding</option>
+                                <option data-i18n="typeBurns">Burns</option>
+                                <option data-i18n="typeStroke">Stroke symptoms</option>
+                                <option data-i18n="typeUnconscious">Unconscious person</option>
                             </select>
                         </label>
-                        <label>Severity
+                        <label data-i18n-label="fieldSeverity">Severity
                             <select name="severity" id="severity">
-                                <option>Medium</option>
-                                <option>High</option>
-                                <option>Critical</option>
-                                <option>Low</option>
+                                <option data-i18n="severityMedium">Medium</option>
+                                <option data-i18n="severityHigh">High</option>
+                                <option data-i18n="severityCritical">Critical</option>
+                                <option data-i18n="severityLow">Low</option>
                             </select>
                         </label>
-                        <label>Location
+                        <label data-i18n-label="fieldLocation">Location
                             <input id="locationValue" value="28.7041, 77.1025">
                         </label>
-                        <label>Contact
-                            <input name="contact" id="contact" placeholder="Phone">
+                        <label data-i18n-label="fieldContact">Contact
+                            <input name="contact" id="contact" placeholder="Phone" data-i18n-placeholder="fieldContactPlaceholder">
                         </label>
-                        <label>Affected
-                            <input name="affected" id="affected" placeholder="Count">
+                        <label data-i18n-label="fieldAffected">Affected
+                            <input name="affected" id="affected" placeholder="Count" data-i18n-placeholder="fieldAffectedPlaceholder">
                         </label>
                     </div>
-                    <label>Description
-                        <textarea name="description" id="description" rows="4" placeholder="Describe the emergency..."></textarea>
+                    <label data-i18n-label="fieldDescription">Description
+                        <textarea name="description" id="description" rows="4" placeholder="Describe the emergency..." data-i18n-placeholder="fieldDescriptionPlaceholder"></textarea>
                     </label>
                     <div class="destination-row">
-                        <label>Hospital lat
+                        <label data-i18n-label="fieldHospitalLat">Hospital lat
                             <input name="destinationLat" id="destinationLat" value="28.6139">
                         </label>
-                        <label>Hospital lng
+                        <label data-i18n-label="fieldHospitalLng">Hospital lng
                             <input name="destinationLng" id="destinationLng" value="77.2090">
                         </label>
                     </div>
-                    <button class="report-action" type="submit">Report Emergency Now</button>
+                    <button class="report-action" type="submit" data-i18n="reportButton">Report Emergency Now</button>
                     <p id="crisisMsg" class="message"></p>
                 </form>
 
-                <section id="aiCard" class="crisis-panel ai-panel">
-                    <div class="ai-heading">
-                        <div class="bot-avatar">AI</div>
-                        <div>
-                            <h2>Medical AI Assistant</h2>
-                            <p>Emergency guidance specialist</p>
+                <section id="assistantCard" class="crisis-panel assistant-card">
+                    <div class="assistant-overview">
+                        <div class="assistant-copy">
+                            <span class="assistant-tag" data-i18n="assistantTag">AI ASSISTANT</span>
+                            <h2 data-i18n="assistantTitle">Doremi is ready</h2>
+                            <p data-i18n="assistantText">Ask in your preferred language, share your symptoms, and Doremi will guide you with urgent steps plus nearby doctor contacts.</p>
                         </div>
-                        <span>Online</span>
+                        <button id="openAiBtn" class="assistant-open-btn" type="button" data-i18n="assistantOpen">Open Doremi</button>
                     </div>
-                    <div id="chatLog" class="chat-log ai-chat-log">
-                        <div class="chat-bubble bot">
-                            Hi, I am your Medical Crisis AI. I can help with first-aid steps, hospital guidance, symptom triage, basic medication safety, and crisis reporting.
-                        </div>
-                    </div>
-                    <div class="quick-chips">
-                        <button type="button" data-prompt="Emergency steps">Emergency steps</button>
-                        <button type="button" data-prompt="How to do CPR?">CPR</button>
-                        <button type="button" data-prompt="Heart attack symptoms">Heart attack</button>
-                        <button type="button" data-prompt="Burn first aid">Burns</button>
-                        <button type="button" data-prompt="Unconscious person">Unconscious</button>
-                        <button type="button" data-prompt="Stroke symptoms">Stroke</button>
-                    </div>
-                    <form id="chatForm" class="chat-form ai-chat-form">
-                        <input name="message" placeholder="Describe your emergency..." required>
-                        <button type="submit">Send</button>
-                    </form>
                 </section>
             </section>
 
             <section id="mapCard" class="crisis-panel map-card">
                 <div class="card-title">
-                    <h2>Live Map Tracking</h2>
-                    <div class="distance-meter"><span id="distanceValue">0 km</span><small>distance left</small></div>
+                    <h2 data-i18n="mapTitle">Live Map Tracking</h2>
+                    <div class="distance-meter"><span id="distanceValue">0 km</span><small data-i18n="distanceLabel">distance left</small></div>
                 </div>
                 <div class="map-tools">
-                    <button id="findHospitalsBtn" type="button">Find Hospitals 10 km</button>
-                    <button id="findBloodBtn" type="button">Find Blood Help 10 km</button>
-                    <span id="placesStatus">Use SOS Location first for best results.</span>
+                    <button id="findHospitalsBtn" type="button" data-i18n="findHospitalsButton">Find Hospitals 10 km</button>
+                    <button id="findBloodBtn" type="button" data-i18n="findBloodButton">Find Blood Help 10 km</button>
+                    <span id="placesStatus" data-i18n="placesDefault">Use SOS Location first for best results.</span>
                 </div>
                 <div id="map"></div>
             </section>
         </section>
+
+        <section id="aiCard" class="doremi-widget">
+            <div class="doremi-shell">
+                <div class="doremi-header">
+                    <div>
+                        <h2>Doremi AI Assistant <span class="bow-mark" aria-hidden="true">🎀</span></h2>
+                        <p data-i18n="assistantHeaderSub">Multilingual medical helper</p>
+                    </div>
+                    <button id="closeAiBtn" class="widget-close" type="button" aria-label="Close chat">x</button>
+                </div>
+
+                <div class="language-strip">
+                    <label class="language-picker" data-i18n-label="languageLabel">Language
+                        <select id="languageSelect">
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                            <option value="bn">Bengali</option>
+                            <option value="ta">Tamil</option>
+                        </select>
+                    </label>
+                    <button id="chatLocateBtn" class="soft-chip" type="button" data-i18n="shareLocationButton">Share location</button>
+                </div>
+
+                <div id="chatLog" class="chat-log ai-chat-log">
+                    <div class="chat-bubble bot" data-greeting="true">Hi! i am doremi 🎀 how can i help you today?</div>
+                </div>
+
+                <div class="quick-chips">
+                    <button type="button" data-prompt-key="chipEmergency">Emergency steps</button>
+                    <button type="button" data-prompt-key="chipCpr">CPR help</button>
+                    <button type="button" data-prompt-key="chipChestPain">Chest pain</button>
+                    <button type="button" data-prompt-key="chipBurns">Burn injury</button>
+                    <button type="button" data-prompt-key="chipUnconscious">Unconscious person</button>
+                    <button type="button" data-prompt-key="chipDoctor">Find nearby doctor</button>
+                </div>
+
+                <form id="chatForm" class="chat-form ai-chat-form">
+                    <input name="message" placeholder="Talk to Doremi..." required data-i18n-placeholder="chatPlaceholder">
+                    <button id="chatVoiceBtn" class="voice-chat-btn" type="button" aria-label="Use voice input">Mic</button>
+                    <button type="submit" data-i18n="sendButton">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <button id="widgetLauncher" class="widget-launcher" type="button" aria-label="Open Doremi">
+            <span class="launcher-bow" aria-hidden="true"></span>
+            <span class="launcher-face">
+                <span class="blush left"></span>
+                <span class="blush right"></span>
+                <span class="eye left"></span>
+                <span class="eye right"></span>
+                <span class="mouth"></span>
+            </span>
+        </button>
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
-
